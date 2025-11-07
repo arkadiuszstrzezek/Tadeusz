@@ -44,9 +44,9 @@
 										<li><a href="#">Veroeros feugiat</a></li> -->
 									</ul>
 								</li>
-								<li><a href="left-sidebar.html">Classic Projekt</a></li>
+								<li><a href="ClassicProjekt.html">Classic Projekt</a></li>
 								<li><a href="Realizacje.html">Realizacje</a></li>
-								<li><a href="two-sidebar.html">O nas</a></li>
+								<li><a href="onas.html">O nas</a></li>
 								<li><a href="no-sidebar.html">Kontakt</a></li>
 							</ul>
 						</nav>
@@ -172,24 +172,24 @@
 							</section>
 							<section class="col-6 col-12-narrower">
 								<h3>Kontakt</h3>
-								<form>
-									<div class="row gtr-50">
-										<div class="col-6 col-12-mobilep">
-											<input type="text" name="name" id="name" placeholder="Name" />
-										</div>
-										<div class="col-6 col-12-mobilep">
-											<input type="email" name="email" id="email" placeholder="Email" />
-										</div>
-										<div class="col-12">
-											<textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
-										</div>
-										<div class="col-12">
-											<ul class="actions">
-												<li><input type="submit" class="button alt" value="Send Message" /></li>
-											</ul>
-										</div>
-									</div>
-								</form>
+								<form method="POST" action="send_email.php">
+    <div class="row gtr-50">
+        <div class="col-6 col-12-mobilep">
+            <input type="text" name="name" id="name" placeholder="Name" required />
+        </div>
+        <div class="col-6 col-12-mobilep">
+            <input type="email" name="email" id="email" placeholder="Email" required />
+        </div>
+        <div class="col-12">
+            <textarea name="message" id="message" placeholder="Message" rows="5" required></textarea>
+        </div>
+        <div class="col-12">
+            <ul class="actions">
+                <li><input type="submit" class="button alt" value="Send Message" /></li>
+            </ul>
+        </div>
+    </div>
+</form>
 							</section>
 						</div>
 					</div>
